@@ -1,0 +1,224 @@
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 -16px;
+}
+
+.col-30 {
+    -ms-flex: 30%;
+    flex: 30%;
+}
+
+.col-50 {
+    -ms-flex: 50%;
+    flex: 50%;
+}
+
+.col-70 {
+    -ms-flex: 70%;
+    flex: 70%;
+}
+
+.col-30,
+.col-50,
+.col-70 {
+    padding: 0 16px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 40px 15px 15px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type=text], input[type=number], input[type=email] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.prev-btn, .next-btn, .add-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.add-btn {
+    width: 100%;
+}
+
+.prev-next{
+    float: inherit;
+    display: grid;
+    justify-items: stretch;
+    align-content: stretch;
+    margin: 0px 215px
+}
+
+.add-btn:hover,.next-btn:hover,.prev-btn:hover {
+    background-color: #45a049;
+}
+
+span {
+    text-align: right;
+    padding: 0px 20px;
+    display:inline-block;
+}
+
+span.price {
+    float: right;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.tab {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+
+.tab {
+    margin: 0px 200px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+table.price th, table.price td {
+    width: 100%;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: white;
+}
+
+#tableHead:hover {
+    background-color: #f2f2f2
+}
+
+/* Customize the label (the container)*/
+.radioBtn {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radioBtn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top:1px;
+    left: 0;
+    height: 15px;
+    width: 16px;
+    background-color: #ddd;
+    border-radius: 50%;
+    padding: 0px;
+}
+
+/* On mouse-over, add a green background color */
+.radioBtn:hover input ~ .checkmark {
+    background-color: #82d5b6;
+}
+
+/* When the radio button is checked, add a green background */
+.radioBtn input:checked ~ .checkmark {
+    background-color: #04aa6d;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radioBtn input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radioBtn .checkmark:after {
+    top: 4px;
+    left: 5px;
+    width: 6px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .tab {
+      margin: 0px 5px;
+  }
+  .prev-next{
+      margin: 0px 20px
+  }
+}
