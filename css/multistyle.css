@@ -124,6 +124,7 @@ input::-webkit-inner-spin-button {
     background-color: #04AA6D;
 }
 
+
 table {
     width: 100%;
 }
@@ -131,6 +132,7 @@ table {
 th, td {
     padding: 15px;
     border-bottom: 1px solid #ddd;
+    text-align: left;
 }
 
 table.price th, table.price td {
@@ -210,6 +212,11 @@ tr:hover {
     height: 7px;
     border-radius: 50%;
     background: white;
+}
+
+h1 {
+    text-align: center;
+    color: #04AA6D;
 }
 
 /* Responsive layout */
