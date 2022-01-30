@@ -218,12 +218,12 @@ tr:hover {
         margin: 0%;
     }
     .prev-next{
-        margin: 0% 2%
+        margin: 0%;
     }
     th, td {
         text-align: left;
     }
     .col-70 {
         padding: 0;
-}
+    }
 }
