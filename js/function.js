@@ -42,7 +42,7 @@ const nextPrev = n => {
     currentTab = currentTab + n;
     // if you have reached the end of the form...
     if (currentTab >= x.length) {
-        document.body.innerHTML = `<h1>Submiting was complette</h1>`;
+        document.body.innerHTML = `<h1>Submitting was complete</h1>`;
         return false;
     }
     // Display the current tab
