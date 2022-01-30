@@ -42,7 +42,7 @@
 
     <div class="tab">
 
-        <div class="col-30">
+        <div class="col-70">
             <div class="container">
                 <div class="row">
                     <div class="col-50">
@@ -169,7 +169,7 @@
                     </table>
                     <hr>
 
-                    <h4>Bill - currency <select id="currency" onchange="changePriceByCurrency()"></select></h4>
+                    <h4>Bill - <a href="https://www.kurzy.cz" title="Kurzy měn, kurzovní lístek ČNB, česká národní banka">currency</a> <select id="currency" onchange="changePriceByCurrency()"></select></h4>
                     <table class="price">
                         <tr>
                             <td>Price without VAT:</td>
@@ -191,7 +191,7 @@
 </form>
 
 
-<div style="overflow:auto;">
+<div class="col-70" style="overflow:auto;">
     <div class="prev-next">
         <button type="button" class="next-btn" id="nextBtn" onclick="nextPrev(1)">Next</button>
         <button type="button" class="prev-btn" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
