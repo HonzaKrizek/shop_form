@@ -222,5 +222,6 @@ tr:hover {
     }
     th, td {
         width: 100%;
+        text-align: left;
     }
 }
