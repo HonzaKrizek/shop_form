@@ -30,7 +30,10 @@ const fixStepIndicator = n => {
 const nextPrev = n => {
     const x = document.getElementsByClassName("tab");
     // Exit the function if any field in the current tab is invalid
-    if (n == 1 && !validateForm()) {
+    if ( n == 1 && !validateForm() ) {
+        return false;
+    }
+    if ( n == 1 && currentTab == 1 && !ValidateEmail(document.getElementById('email')) ) {
         return false;
     }
     // Hide the current tab
@@ -39,6 +42,7 @@ const nextPrev = n => {
     currentTab = currentTab + n;
     // if you have reached the end of the form...
     if (currentTab >= x.length) {
+        document.body.innerHTML = `<h1>Submiting was complette</h1>`;
         return false;
     }
     // Display the current tab
@@ -69,6 +73,22 @@ const validateForm = () => {
         document.getElementsByClassName("step")[currentTab].className += " finish";
     }
     return valid; // return the valid status
+}
+
+// This function validate format of e-mail
+function ValidateEmail(inputText)
+{
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(inputText.value.match(mailformat))
+    {
+        document.form1.email.focus();
+        return true;
+    }
+    else
+    {
+        document.form1.email.focus();
+        return false;
+    }
 }
 
 // This function set a table of added products
