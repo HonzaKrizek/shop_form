@@ -215,9 +215,9 @@ tr:hover {
 /* Responsive layout */
 @media screen and (max-width: 600px) {
   .tab {
-      margin: 0% 5%;
+      margin: 0% 2%;
   }
   .prev-next{
-      margin: 0% 6%
+      margin: 0% 2%
   }
 }
