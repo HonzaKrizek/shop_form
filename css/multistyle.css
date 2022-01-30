@@ -68,9 +68,10 @@ label {
     display: grid;
     justify-items: stretch;
     align-content: stretch;
-    margin: 0px 215px
+    margin: 0% 6%
 }
 
+/* On mouse-over, add a green background color: */
 .add-btn:hover,.next-btn:hover,.prev-btn:hover {
     background-color: #45a049;
 }
@@ -91,8 +92,10 @@ input.invalid {
 
 .tab {
     display: none;
+    margin: 0% 5%;
 }
 
+/* Hide spinners on number input: */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -119,10 +122,6 @@ input::-webkit-inner-spin-button {
 /* Mark the steps that are finished and valid: */
 .step.finish {
     background-color: #04AA6D;
-}
-
-.tab {
-    margin: 0px 200px;
 }
 
 table {
@@ -214,11 +213,11 @@ tr:hover {
 }
 
 /* Responsive layout */
-@media (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .tab {
-      margin: 0px 5px;
+      margin: 0% 5%;
   }
   .prev-next{
-      margin: 0px 20px
+      margin: 0% 6%
   }
 }
