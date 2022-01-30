@@ -8,7 +8,6 @@
     <script src="https://data.kurzy.cz/json/meny/b[6]cb.js" type="text/javascript"></script>
 </head>
 <body>
-
 <form>
     <div class="tab">
         <div class="col-70">
@@ -27,7 +26,7 @@
                     </h4>
                     <hr>
 
-                    <table class="price">
+                    <table class="price">                        
                         <tr id="tableHead">
                             <th>Product name</th>
                             <th>Price</th>
@@ -130,6 +129,12 @@
 
                     <h4>Billing Address</h4>
                     <table>
+                        <colgroup>
+                           <col span="1" style="width: 50%;">
+                           <col span="1" style="width: 50%;">
+                        </colgroup>
+
+                        <tbody>
                         <tr>
                             <td>Name:</td>
                             <td id="s-fname"></td>
@@ -154,11 +159,18 @@
                             <td>ZIP code:</td>
                             <td id="s-zip"></td>
                         </tr>
+                    </tbody>
                     </table>
                     <hr>
 
                     <h4>Shipment and payment</h4>
                     <table>
+                        <colgroup>
+                           <col span="1" style="width: 50%;">
+                           <col span="1" style="width: 50%;">
+                        </colgroup>
+
+                        <tbody>
                         <tr>
                             <td>Shipment method:</td>
                             <td id="shipment"></td>
@@ -167,11 +179,14 @@
                             <td>Payment method:</td>
                             <td id="payment"></td>
                         </tr>
+                        </tbody>
                     </table>
                     <hr>
 
                     <h4>Bill - <a href="https://www.kurzy.cz" title="Kurzy měn, kurzovní lístek ČNB, česká národní banka">currency</a> <select id="currency" onchange="changePriceByCurrency()"></select></h4>
                     <table class="price">
+
+                        <tbody>
                         <tr>
                             <td>Price without VAT:</td>
                             <td id="s-price-vat"></td>
@@ -184,6 +199,7 @@
                             <td>Total price:</td>
                             <td id="s-price"></td>
                         </tr>
+                    </tbody>
                     </table>
                 </div>
             </div>
