@@ -223,4 +223,7 @@ tr:hover {
     th, td {
         text-align: left;
     }
+    .col-70 {
+        padding: 0;
+}
 }
